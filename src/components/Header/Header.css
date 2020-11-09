@@ -1,0 +1,31 @@
+:root {
+    --primary: #0072BB;
+    --secondary: #8FC93A;
+    --third: #E4CC37;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0072BB;
+    width: 100%;
+}
+
+header a {
+    color: var(--third);
+    margin-left: 1em;
+    text-underline-offset: none;
+}
+
+header a:hover {
+    color: var(--secondary);
+}
+
+header nav {
+    margin-top: 1.8em;
+}
+
+header nav a {
+    padding: 10px;
+    margin-right: 3em;
+}

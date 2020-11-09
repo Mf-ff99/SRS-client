@@ -1,0 +1,10 @@
+main {
+    background-color: whitesmoke;
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: whitesmoke;
+}
