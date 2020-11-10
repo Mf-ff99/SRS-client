@@ -1,5 +1,5 @@
-@media only screen and (max-width: 1400px) {
-    .dashboard {
+@media only screen and (max-width: 900px) {
+    /* .dashboard {
         margin: 0;
         background-color: var(--secondary);
         width: fit-content;
@@ -29,11 +29,9 @@ ul li {
     background-color: var(--third);
     display: flex;
     flex-direction: column;
-}
+} */
 
 }
-
-@media only screen and (min-width: 1400px) {
     .dashboard {
         /* background-color: var(--primary)  */
         margin: 0;
@@ -41,29 +39,57 @@ ul li {
         border: 2px solid var(--primary);
         padding: .6em;
         width: fit-content;
-        min-width: 1400px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     
     .dashboard ul {
-        display: flex;
-        justify-content: center;
-        margin: 5%;
-        padding: 0;
-        list-style: none;
+        display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
     }
     
     ul li {
-        padding: .5em;
+        padding: 0em .9em;
+        margin: 1.1em 0;
         background-color: var(--third);
         border: 2px solid var(--primary);
         border-radius: 5px;
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex: 3 1;
+    }
+
+    ul li h4 {
+        display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-right: 2em;
+    }
+
+    ul li .answer-count {
+        display: flex;
         flex-direction: column;
-        margin-right: .4em;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .correct-count {
+        color: green;
+    }
+    
+    .incorrect-count {
+        color: #3D0C11;
     }
 
     .dashboard button {
@@ -71,9 +97,9 @@ ul li {
     }
 
     .card-header {
-        padding-top: .4em;
+        /* padding-top: .4em; */
     }
-}
+
 
 
 

@@ -24,22 +24,21 @@ const LanguageService = {
       ? res.json().then(e => Promise.reject(e))
       : res.json());
   },
-
-  postGuess(guess) {
-    console.log(guess)
-    return fetch(`${config.API_ENDPOINT}/language/guess`, {
-      method: 'POST',
+  
+  postGuess: async guess => {
+    const res = await fetch(`${config.API_ENDPOINT}/language/guess`, {
+      method: "POST",
       headers: {
-        'content-type': 'application/json',
-        Authorization: `bearer ${TokenService.getAuthToke1n()}`,
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${TokenService.getAuthToken()}`
       },
       body: JSON.stringify({ guess })
-    })
-      .then(res =>
-        (!res.ok)
-          ? res.json().then(e => Promise.reject(e))
-          : res.json()
-      )
+    });
+    if (!res.ok) {
+      return res.json().then(err => Promise.reject(err));
+    } else {
+      return res.json();
+    }
   },
 }
 

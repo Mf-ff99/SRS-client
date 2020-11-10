@@ -48,30 +48,40 @@ class DashboardRoute extends Component {
     this.countTotalCorrectAnswers(this.state.words)
     return (
       <section className='dashboard'>
+
         <div className='current-language'>
           <h2>
-          Welcome to your {this.state.language} SRS dashboard!
+            Welcome to your {this.state.language} dashboard!
           </h2>
         </div>
-        <div className="srs-score">
-          
-          <br />
+        <Link to='/learn'>
+<Button type='button'>
+  Start practicing
+</Button>
+</Link>
+        <div className='srs-score'>
+
           Total correct answers: {this.state.totalScore}
-          <br />
-          {/* Your total correct answers: {this.state.words} */}
           <span className='card-header'><h3>Words to practice</h3></span>
           <ul>
-            {this.state.words.map(w => <li key={i++}><h4>{w.original}</h4>  : {w.translation} <br /> correct answer count: {w.correct_count} <br /> incorrect answer count: {w.incorrect_count}</li>)}
+            {this.state.words.map(w =>
+              <li key={i++}><h4>{w.original}</h4>
+                <div className='answer-count'>
+
+                <span className='correct-count'>
+                  correct answer count: {w.correct_count}
+                </span>
+                <span className='incorrect-count'>
+                  incorrect answer count: {w.incorrect_count}
+                </span>
+                </div>
+              </li>
+              )
+            }
           </ul>
         </div>
-        <Link to='/learn'>
-
-        <Button type='button'>
-          Start practicing
-        </Button>
-        </Link>
       </section>
-    ) 
+    )
   }
 }
 

@@ -6,5 +6,11 @@ main {
 }
 
 body {
+    /* background-image: url(../../images/spain-bg.jpg); */
     background-color: whitesmoke;
+
+}
+
+a {
+    text-decoration: none;
 }
