@@ -31,7 +31,7 @@ const LanguageService = {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
-        Authorization: `bearer ${TokenService.getAuthToken()}`,
+        Authorization: `bearer ${TokenService.getAuthToke1n()}`,
       },
       body: JSON.stringify({ guess })
     })

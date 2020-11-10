@@ -33,7 +33,6 @@ export default class Dashboard extends React.Component {
     e.preventDefault();
     this.setState({ isDisabled: false });
     LanguageService.postGuess(this.context.guess).then(res => {
-      console.log(this.context.guess)
       this.context.setResponse(res);
       this.setState({ render: false, isDisabled: false });
     });
