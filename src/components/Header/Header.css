@@ -29,3 +29,12 @@ header nav a {
     padding: 10px;
     margin-right: 3em;
 }
+
+header nav .right-side-nav {
+    white-space: nowrap;
+}
+
+header span.user-name {
+    /* margin: .4em; */
+    /* padding: 3px; */
+}

@@ -14,7 +14,7 @@ class Header extends Component {
   renderLogoutLink() {
     return (
       <div>
-        <span>
+        <span className='user-name'>
           {this.context.user.name}
         </span>
         <nav>
@@ -33,7 +33,7 @@ class Header extends Component {
       <nav>
         <Link to='/login'>Login</Link>
         {' '}
-        <Link to='/register'>Sign up</Link>
+        <Link className='right-side-nav' to='/register'>Sign up</Link>
       </nav>
     )
   }
@@ -50,7 +50,7 @@ class Header extends Component {
           ? this.renderLogoutLink()
           : this.renderLoginLink()}
       </header>
-    );
+    ) 
   }
 }
 

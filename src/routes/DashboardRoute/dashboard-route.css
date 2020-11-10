@@ -35,7 +35,7 @@ ul li {
 
 @media only screen and (min-width: 1400px) {
     .dashboard {
-        /* background-color: var(--primary); */
+        /* background-color: var(--primary)  */
         margin: 0;
         background-color: var(--secondary);
         border: 2px solid var(--primary);
@@ -54,7 +54,6 @@ ul li {
         margin: 5%;
         padding: 0;
         list-style: none;
-        /* width: fit-content; */
     }
     
     ul li {
@@ -69,6 +68,10 @@ ul li {
 
     .dashboard button {
         margin: .4em;
+    }
+
+    .card-header {
+        padding-top: .4em;
     }
 }
 

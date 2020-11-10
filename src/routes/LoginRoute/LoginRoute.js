@@ -23,7 +23,7 @@ class LoginRoute extends Component {
           onLoginSuccess={this.handleLoginSuccess}
         />
       </section>
-    );
+    ) 
   }
 }
 

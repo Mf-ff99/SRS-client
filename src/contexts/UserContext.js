@@ -42,7 +42,7 @@ export class UserProvider extends Component {
         username: jwtPayload.sub,
       }
 
-    this.state = state;
+    this.state = state 
     IdleService.setIdleCallback(this.logoutBecauseIdle)
   }
 

@@ -24,7 +24,7 @@ class RegistrationRoute extends Component {
           onRegistrationSuccess={this.handleRegistrationSuccess}
         />
       </section>
-    );
+    ) 
   }
 }
 
