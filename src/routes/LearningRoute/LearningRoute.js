@@ -82,12 +82,12 @@ export default class Dashboard extends React.Component {
           </Button>
         </form>
 
-        <p id="word-count1" aria-live="polite">
-          You have answered this word correctly {headWord.wordCorrectCount}{" "}
+        <p id="word-count-correct" aria-live="polite">
+          You have answered this word <span className='learned-correctly'>correctly</span> {headWord.wordCorrectCount}{" "}
           times.
         </p>
-        <p id="word-count2" aria-live="polite">
-          You have answered this word incorrectly {headWord.wordIncorrectCount}{" "}
+        <p id="word-count-incorrect" aria-live="polite">
+          You have answered this word <span className='learned-incorrect'>incorrectly</span> {headWord.wordIncorrectCount}{" "}
           times.
         </p>
       </>
