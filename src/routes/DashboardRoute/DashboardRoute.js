@@ -1,4 +1,4 @@
-import React, { Component, useContext } from 'react'
+import React, { Component } from 'react'
 import config from '../../config'
 // import UserContext from '../../contexts/UserContext'
 import TokenService from '../../services/token-service'
