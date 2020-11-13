@@ -12,54 +12,59 @@ Bootstrapped with create-react-app and completed using JavaScript, vanilla CSS, 
 
 ## Screenshots
 
-# Login Page
+### Login Page
 
 ![image](https://user-images.githubusercontent.com/66629254/99112345-837c3700-25bb-11eb-8887-6853bad23990.png)
 
-# Sign-up Page
+### Sign-up Page
 
 ![image](https://user-images.githubusercontent.com/66629254/99112386-95f67080-25bb-11eb-90bc-59f2c81ca8ad.png)
 
-# Dashboard 
+### Dashboard 
 
 ![image](https://user-images.githubusercontent.com/66629254/99112434-aad30400-25bb-11eb-8565-03912a2bb171.png)
 
-# Practice page
+### Practice page
 
 ![image](https://user-images.githubusercontent.com/66629254/99112465-b4f50280-25bb-11eb-8164-cc006c272496.png)
 
-# Next word page
+### Next word page
 
 ![image](https://user-images.githubusercontent.com/66629254/99112507-bfaf9780-25bb-11eb-84eb-470ea1c889fa.png)
 
 
-## Running the tests
+## Tech-stack and Testing
 
-This project uses [Cypress IO](https://docs.cypress.io) for integration testing using the Chrome browser.
+React.js, JavaScript, vanilla css, PostgreSQL, SQL, Node.js, Enzyme, Jest, Mocha, Chai
 
-Cypress has the following expectations:
+Front end testing: This project uses [Cypress IO](https://docs.cypress.io) for integration testing using the Chrome browser.
 
-- You have cypress installed (this is a devDependency of the project)
-- You have your application running at http://localhost:3000.
-  - You can change the address of this expectation in the `./cypress.json` file.
-- Your `./src/config.js` is using http://localhost:8000/api as the `API_ENDPOINT`
+Back end testing: Mocha and Chai were used to test each endpoint and knex-services, each endpoint has at least one test for the 'happy path', and one test for the 'unhappy path'
 
-To start the tests run the command:
+## The Back-end
+ ### SRS API
+ The back-end is written with Express.js and utilizes a RESTful state to satisfy CRUD requests.
+ 
+ More extensive API documentation is available at the API github repo.
+ 
+  ### API Github Repo
+   * https://github.com/Mf-ff99/SRS-api
+   
+   
+## Other odds and ends
 
-```bash
-npm run cypress:open
+ If you wish to see what the application can do on your own machine, or simply tinker around with the code, follow the directions below.
+ 
+ * clone the repo to an empty folder
+ * then run the following commands in the cmd console
+ ```
+ npm i
+ ```
+ ```
+ npm run start
 ```
 
-On the first run of this command, the cypress application will verify its install. Any other runs after this, the verification will be skipped.
 
-The command will open up the Cypress application which reads tests from the `./cypress/integration/` directory. You can then run individual tests by clicking on the file names or run all tests by clicking the "run all tests" button in the cypress GUI.
 
-Tests will assert against your running localhost client application.
 
-You can also start all of the tests in the command line only (not using the GUI) by running the command:
 
-```bash
-npm run cypress:run
-```
-
-This will save video recordings of the test runs in the directory `./cypress/videos/`.
