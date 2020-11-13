@@ -1,19 +1,37 @@
-# Spaced Repetition Capstone
+# LearnSpanish! 
 
-## Setup
+## Summary
+Bootstrapped with create-react-app and completed using JavaScript, vanilla CSS, JSX and ReactJS.
 
-To setup the application
+ Front-end Live Deployment: https://srs-client.vercel.app/
+ Back-end Live Deployment: https://srs-server-api.herokuapp.com/
+ 
+  LearnSpanish! is a language learning application designed for teaching beginner Spanish learners a handful of Spanish words and phrases. LearnSpanish! features a Spaced-Repetition algorithm on the back-end to help users stay caught up on their studies without forgetting any new words they have learned. The application features 10 spanish words and is built to allow for the application to be expanded upon. 
 
-1. Fork and clone the project to your machine
-2. `npm install`. This will also install the application *Cypress.io* for running browser integration tests
+  In this project, the hardest part was building out the Express server on the back-end to accomadate the SRS system. Two endpoints handle the Language requests to determine the user's current score and return the next word for the user to study. 
 
-The project expects you have the Spaced repetition API project setup and running on http://localhost:8000.
+## Screenshots
 
-Find instructions to setup the API here https://github.com/Thinkful-Ed/spaced-repetition-api.
+# Login Page
 
-## Running project
+![image](https://user-images.githubusercontent.com/66629254/99112345-837c3700-25bb-11eb-8887-6853bad23990.png)
 
-This is a `create-react-app` project so `npm start` will start the project in development mode with hot reloading by default.
+# Sign-up Page
+
+![image](https://user-images.githubusercontent.com/66629254/99112386-95f67080-25bb-11eb-90bc-59f2c81ca8ad.png)
+
+# Dashboard 
+
+![image](https://user-images.githubusercontent.com/66629254/99112434-aad30400-25bb-11eb-8565-03912a2bb171.png)
+
+# Practice page
+
+![image](https://user-images.githubusercontent.com/66629254/99112465-b4f50280-25bb-11eb-8164-cc006c272496.png)
+
+# Next word page
+
+![image](https://user-images.githubusercontent.com/66629254/99112507-bfaf9780-25bb-11eb-84eb-470ea1c889fa.png)
+
 
 ## Running the tests
 
