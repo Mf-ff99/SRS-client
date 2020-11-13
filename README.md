@@ -35,7 +35,7 @@ Bootstrapped with create-react-app and completed using JavaScript, vanilla CSS, 
 
 ## Tech-stack and Testing
 
-React.js, JavaScript, vanilla css, PostgreSQL, SQL, Node.js, Enzyme, Jest, Mocha, Chai
+React.js, JavaScript, vanilla css, PostgreSQL, SQL, Node.js, Cypress IO, Mocha, Chai
 
 Front end testing: This project uses [Cypress IO](https://docs.cypress.io) for integration testing using the Chrome browser.
 
